@@ -705,44 +705,79 @@ click5.on("click", function(){
   d3.select("div.list-group").append("button").attr("id", "three").attr("class", "list-group-item list-group-item-action").text(" ( 3 ) ")
   d3.select("div.list-group").append("button").attr("id", "four").attr("class", "list-group-item list-group-item-action").text(" ( 4 ) ")
   d3.select("div.list-group").append("button").attr("id", "five").attr("class", "list-group-item list-group-item-action").text(" ( 5 ) ")
+  d3.select("div.list-group").append("button").attr("id", "six").attr("class", "list-group-item list-group-item-action").text(" ( 6 ) ")
+  d3.select("div.list-group").append("button").attr("id", "seven").attr("class", "list-group-item list-group-item-action").text(" ( 7 ) ")
+  d3.select("div.list-group").append("button").attr("id", "eight").attr("class", "list-group-item list-group-item-action").text(" ( 8 ) ")
+  d3.select("div.list-group").append("button").attr("id", "nine").attr("class", "list-group-item list-group-item-action").text(" ( 9 ) ")
     
   };  
 
   init()
 
   // Take Away #1
-  d3.select("#one").on("click", function(){
-    d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
-    d3.select("#one").text(" ( 1 ) Sonora is by far the greatest producer of Gold and Copper")
-      .attr("class", "list-group-item list-group-item-action active")
+  d3.select("#one")
+  .on("click", function(){
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#one").text(" ( 1 ) Mexico is the biggest producer of Silver on a World Way Basis, converting to Zacatecas as the principal generator of Silver in Mex, this according to the last Report of Silver Institute")
+  .attr("class", "list-group-item list-group-item-action active")
+
   });
 
   // Take Away #2
   d3.select("#two").on("click", function(){
-    d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
-    d3.select("#two").text(" ( 2 ) Zacatecas is the larger producer of Silver followed by Chihuahua and Durango")
-    .attr("class", "list-group-item list-group-item-action active")
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#two").text(" ( 2 ) The main states that generate the 80% of the national mining production in Mexico are: Chihuahua, Zacatecas, Durango and Guerrero.")
+  .attr("class", "list-group-item list-group-item-action active")
+
   })
 
   // Take Away #3
   d3.select("#three").on("click", function(){
-    d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
-    d3.select("#three").text(" ( 3 ) Only a few states in Mexico are dedicated to the Mining Industry")
-    .attr("class", "list-group-item list-group-item-action active")
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#three").text(" ( 3 ) 23 states in Mexico are dedicated to the Mining Industry, that position Mexico on the 5th place of WW investment on this sector, that based on S&P index")
+  .attr("class", "list-group-item list-group-item-action active")
   })
 
   // Take Away #4
   d3.select("#four").on("click", function(){
-    d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
-    d3.select("#four").text(" ( 4 ) INEGI data can seem confusing but it is very well organized in comparisson with other governmental bodies")
-    .attr("class", "list-group-item list-group-item-action active")
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#four").text(" ( 4 ) The mining-metallurgical sector in our country represented 8.2% of the industrial Gross Domestic Product (GDP) and 2.4% of GDP. according to figures from the National Institute of Statistics and Geography (INEGI), in 2018.")
+  .attr("class", "list-group-item list-group-item-action active")
   })
 
   // Take Away #5
   d3.select("#five").on("click", function(){
-    d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
-    d3.select("#five").text(" ( 5 ) The hardest part of the project was to connect the back and the front end")
-    .attr("class", "list-group-item list-group-item-action active")
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#five").text(" ( 5 ) Mexico ranks among the top 10 producers of 16 different minerals like: silver, bismuth, fluorite, celestite, gold and copper.")
+  .attr("class", "list-group-item list-group-item-action active")
+  })
+
+  // Take Away #6
+  d3.select("#six").on("click", function(){
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#six").text(" ( 6 ) From the Proyect, We realized that, the INEGI API is have an inconsistencies at the moment of run and download data, for example the main URL was not available")
+  .attr("class", "list-group-item list-group-item-action active")
+  })
+
+  // Take Away #7
+  d3.select("#seven").on("click", function(){
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#seven").text(" ( 7 )Using D3 as main tool of JS, permitted us visualize that it's a big tool to improve and visualize data on JavaScript")
+  .attr("class", "list-group-item list-group-item-action active")
+  })
+
+  // Take Away #8
+  d3.select("#eight").on("click", function(){
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#eight").text(" ( 8 ) GeoJson and Fleetmap could work as a pair in order to create tools for decition making process")
+  .attr("class", "list-group-item list-group-item-action active")
+  })
+
+  // Take Away #9
+  d3.select("#nine").on("click", function(){
+  d3.selectAll("button").attr("class", "list-group-item list-group-item-action")
+  d3.select("#nine").text(" ( 9 ) The hardest part of the project was mining and cleaning  the data, in order to improve our Programing Codes")
+  .attr("class", "list-group-item list-group-item-action active")
   })
 
 })  // end of event listener click
