@@ -7,16 +7,17 @@ app = Flask(__name__)
 
 
 # Initialize PyMongo to work with MongoDBs
-conn = 'mongodb://localhost:27017'
+conn = 'mongodb+srv://sigma2:Project2Sigma2021@cluster0.azq2l.mongodb.net/mexicoMining?retryWrites=true&w=majority'
 client = pymongo.MongoClient(conn)
 
 # Define database
-db = client.mexico_mining
+db = client.mexicoMining
 
 # General queries to init application and get all the states GeoJSON and mineral information
 general = db.general.find({},{'_id': False}).next()
 features = list(db.estados.find({},{'_id': False}))
 tabla = list(db.tabla.find({},{'_id': False}))
+# client.close()
 
 # Main url the app is deployed
 @app.route("/")
